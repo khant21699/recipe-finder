@@ -7,12 +7,12 @@ import BackButton from "@/components/BackBtn";
 import Loading from "@/components/Loading";
 import RecipeHeader from "@/components/recipe/RecipeHeader";
 import IngredientsList from "@/components/recipe/IngredientsList";
-import temp from "@/temp.json";
 import RecipeSummary from "@/components/recipe/RecipeSummary";
+import Instruction from "@/components/recipe/Instruction";
 
 const RecipeView = () => {
   const { id } = useLocalSearchParams();
-  const [recipe, setRecipe] = useState<RecipeDetail | undefined>(temp as any);
+  const [recipe, setRecipe] = useState<RecipeDetail | undefined>();
   const [loading, setLoading] = useState(false);
 
   const getData = async () => {
@@ -27,11 +27,11 @@ const RecipeView = () => {
     }
   };
 
-  // useEffect(() => {
-  //   getData();
-  // }, [id]);
+  useEffect(() => {
+    getData();
+  }, [id]);
 
-  if (loading) return <Loading />;
+  if (loading) return <Loading showBackBtn />;
 
   if (recipe)
     return (
@@ -45,6 +45,11 @@ const RecipeView = () => {
           />
           <RecipeSummary summary={recipe.summary} type={recipe.dishTypes} />
           <IngredientsList ingredients={recipe.extendedIngredients} />
+          {recipe.analyzedInstructions.map((i, index) => {
+            return (
+              <Instruction number={index + 1} key={index} instruction={i} />
+            );
+          })}
         </ScrollView>
       </View>
     );

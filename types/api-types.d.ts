@@ -37,7 +37,7 @@ interface RecipeDetail {
   healthScore: number;
   spoonacularScore: number;
   pricePerServing: number;
-  analyzedInstructions: any[]; // Define a proper type for instructions if needed
+  analyzedInstructions: analyzedInstructions[]; // Define a proper type for instructions if needed
   cheap: boolean;
   creditsText: string;
   cuisines: string[];
@@ -104,3 +104,33 @@ interface ProductMatch {
   score: number;
   link: string;
 }
+
+type analyzedInstructions = {
+  name: string;
+  steps: Instruction[];
+};
+
+type Instruction = {
+  number: number;
+  step: string;
+  ingredients: {
+    id: number;
+    name: string;
+    localizedName: string;
+    image: string;
+  }[];
+  equipment: {
+    id: number;
+    name: string;
+    localizedName: string;
+    image: string;
+    temperature?: {
+      number: number;
+      unit: string;
+    };
+  }[];
+  length?: {
+    number: number;
+    unit: string;
+  };
+};
