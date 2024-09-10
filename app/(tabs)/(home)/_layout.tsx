@@ -1,14 +1,8 @@
-import {
-  Text,
-  SafeAreaView,
-  View,
-  ScrollView,
-  ActivityIndicator,
-} from "react-native";
+// Home.tsx
 import React, { useEffect, useState, useCallback } from "react";
+import { SafeAreaView } from "react-native";
 import { searchRecipes } from "@/composable/use-api";
-import RecieptCard from "@/components/RecieptCard";
-import Loading from "@/components/Loading";
+import RecipeList from "@/components/home/RecipeList";
 import SearchBar from "@/components/SearchBar";
 
 const PAGE_SIZE = 10;
@@ -41,7 +35,7 @@ const Home = () => {
         }
         setHasMore(response.results.length >= PAGE_SIZE);
       } catch (error) {
-        console.error("Failed to fetch recipes:", error);
+        console.error("Failed to fetch recipes:fdfdfdfdfdfdfdfd", error);
       } finally {
         setLoading(false);
         setLoadingMore(false);
@@ -73,24 +67,12 @@ const Home = () => {
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: "white" }}>
       <SearchBar onSearch={handleSearch} />
-      {loading ? (
-        <Loading />
-      ) : (
-        <ScrollView
-          style={{ flex: 1, backgroundColor: "white" }}
-          contentContainerStyle={{
-            padding: 20,
-            gap: 20, // This will create space between items
-          }}
-          onScroll={handleScroll}
-          scrollEventThrottle={16} // Adjust scroll event throttle to improve performance
-        >
-          {recipes.map((recipe, index) => (
-            <RecieptCard key={index} recipe={recipe} />
-          ))}
-          {loadingMore && <ActivityIndicator size="large" color="#0000ff" />}
-        </ScrollView>
-      )}
+      <RecipeList
+        recipes={recipes}
+        loading={loading}
+        loadingMore={loadingMore}
+        onScroll={handleScroll}
+      />
     </SafeAreaView>
   );
 };

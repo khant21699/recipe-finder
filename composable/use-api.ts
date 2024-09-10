@@ -1,5 +1,4 @@
 const API_KEY = process.env.EXPO_PUBLIC_SPOONACULAR_API_KEY;
-// const API_KEY = "cd0ac3108241455da6c692ee9a0de679";
 
 // Function to search recipes with pagination support
 export async function searchRecipes(
