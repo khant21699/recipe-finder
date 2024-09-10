@@ -1,0 +1,675 @@
+{
+  "vegetarian": false,
+  "vegan": false,
+  "glutenFree": false,
+  "dairyFree": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "veryPopular": false,
+  "sustainable": false,
+  "lowFodmap": false,
+  "weightWatcherSmartPoints": 10,
+  "gaps": "no",
+  "preparationMinutes": null,
+  "cookingMinutes": null,
+  "aggregateLikes": 3,
+  "healthScore": 70,
+  "creditsText": "Food52",
+  "sourceName": "Food52",
+  "pricePerServing": 393.62,
+  "extendedIngredients": [
+    {
+      "id": 15001,
+      "aisle": "Seafood",
+      "image": "anchovies.jpg",
+      "consistency": "SOLID",
+      "name": "oil-packed anchovy filets",
+      "nameClean": "boquerones",
+      "original": "6 oil-packed anchovy filets, rinsed",
+      "originalName": "oil-packed anchovy filets, rinsed",
+      "amount": 6,
+      "unit": "",
+      "meta": ["rinsed"],
+      "measures": {
+        "us": {
+          "amount": 6,
+          "unitShort": "",
+          "unitLong": ""
+        },
+        "metric": {
+          "amount": 6,
+          "unitShort": "",
+          "unitLong": ""
+        }
+      }
+    },
+    {
+      "id": 5062,
+      "aisle": "Meat",
+      "image": "chicken-breasts.png",
+      "consistency": "SOLID",
+      "name": "chicken breasts",
+      "nameClean": "chicken breast",
+      "original": "2 chicken breasts",
+      "originalName": "chicken breasts",
+      "amount": 2,
+      "unit": "",
+      "meta": [],
+      "measures": {
+        "us": {
+          "amount": 2,
+          "unitShort": "",
+          "unitLong": ""
+        },
+        "metric": {
+          "amount": 2,
+          "unitShort": "",
+          "unitLong": ""
+        }
+      }
+    },
+    {
+      "id": 1032046,
+      "aisle": "Condiments",
+      "image": "dijon-mustard.jpg",
+      "consistency": "LIQUID",
+      "name": "dijon mustard",
+      "nameClean": "dijon mustard",
+      "original": "1 tablespoon Dijon mustard",
+      "originalName": "Dijon mustard",
+      "amount": 1,
+      "unit": "tablespoon",
+      "meta": [],
+      "measures": {
+        "us": {
+          "amount": 1,
+          "unitShort": "Tbsp",
+          "unitLong": "Tbsp"
+        },
+        "metric": {
+          "amount": 1,
+          "unitShort": "Tbsp",
+          "unitLong": "Tbsp"
+        }
+      }
+    },
+    {
+      "id": 1032046,
+      "aisle": "Condiments",
+      "image": "dijon-mustard.jpg",
+      "consistency": "LIQUID",
+      "name": "dijon mustard",
+      "nameClean": "dijon mustard",
+      "original": "1 Tbsp dijon mustard",
+      "originalName": "dijon mustard",
+      "amount": 1,
+      "unit": "Tbsp",
+      "meta": [],
+      "measures": {
+        "us": {
+          "amount": 1,
+          "unitShort": "Tbsp",
+          "unitLong": "Tbsp"
+        },
+        "metric": {
+          "amount": 1,
+          "unitShort": "Tbsp",
+          "unitLong": "Tbsp"
+        }
+      }
+    },
+    {
+      "id": 18033,
+      "aisle": "Bakery/Bread",
+      "image": "half-baguette.jpg",
+      "consistency": "SOLID",
+      "name": "baguette",
+      "nameClean": "thin baguette",
+      "original": "1/2 french baguette",
+      "originalName": "french baguette",
+      "amount": 0.5,
+      "unit": "",
+      "meta": ["french"],
+      "measures": {
+        "us": {
+          "amount": 0.5,
+          "unitShort": "",
+          "unitLong": ""
+        },
+        "metric": {
+          "amount": 0.5,
+          "unitShort": "",
+          "unitLong": ""
+        }
+      }
+    },
+    {
+      "id": 10211215,
+      "aisle": "Produce",
+      "image": "garlic.jpg",
+      "consistency": "SOLID",
+      "name": "garlic cloves",
+      "nameClean": "whole garlic cloves",
+      "original": "3 garlic cloves, minced and divided",
+      "originalName": "garlic cloves, minced and divided",
+      "amount": 3,
+      "unit": "",
+      "meta": ["divided", "minced"],
+      "measures": {
+        "us": {
+          "amount": 3,
+          "unitShort": "",
+          "unitLong": ""
+        },
+        "metric": {
+          "amount": 3,
+          "unitShort": "",
+          "unitLong": ""
+        }
+      }
+    },
+    {
+      "id": 10719335,
+      "aisle": "Baking",
+      "image": "sugar-in-bowl.png",
+      "consistency": "SOLID",
+      "name": "granulated sugar",
+      "nameClean": "granulated sugar",
+      "original": "1 1/4 teaspoons granulated sugar, or to taste",
+      "originalName": "granulated sugar, or to taste",
+      "amount": 1.25,
+      "unit": "teaspoons",
+      "meta": ["to taste"],
+      "measures": {
+        "us": {
+          "amount": 1.25,
+          "unitShort": "tsps",
+          "unitLong": "teaspoons"
+        },
+        "metric": {
+          "amount": 1.25,
+          "unitShort": "tsps",
+          "unitLong": "teaspoons"
+        }
+      }
+    },
+    {
+      "id": 10719335,
+      "aisle": "Baking",
+      "image": "sugar-in-bowl.png",
+      "consistency": "SOLID",
+      "name": "granulated sugar",
+      "nameClean": "granulated sugar",
+      "original": "1 1/4 tsp granulated sugar, or to taste",
+      "originalName": "granulated sugar, or to taste",
+      "amount": 1.25,
+      "unit": "tsp",
+      "meta": ["to taste"],
+      "measures": {
+        "us": {
+          "amount": 1.25,
+          "unitShort": "tsps",
+          "unitLong": "teaspoons"
+        },
+        "metric": {
+          "amount": 1.25,
+          "unitShort": "tsps",
+          "unitLong": "teaspoons"
+        }
+      }
+    },
+    {
+      "id": 9152,
+      "aisle": "Produce",
+      "image": "lemon-juice.jpg",
+      "consistency": "LIQUID",
+      "name": "lemon juice",
+      "nameClean": "lemon juice",
+      "original": "1/4 cup lemon juice",
+      "originalName": "lemon juice",
+      "amount": 0.25,
+      "unit": "cup",
+      "meta": [],
+      "measures": {
+        "us": {
+          "amount": 0.25,
+          "unitShort": "cups",
+          "unitLong": "cups"
+        },
+        "metric": {
+          "amount": 61,
+          "unitShort": "ml",
+          "unitLong": "milliliters"
+        }
+      }
+    },
+    {
+      "id": 4053,
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "image": "olive-oil.jpg",
+      "consistency": "LIQUID",
+      "name": "olive oil",
+      "nameClean": "olive oil",
+      "original": "1/2 cup plus 2 tablespoons olive oil, divided",
+      "originalName": "olive oil, divided",
+      "amount": 0.5,
+      "unit": "cup",
+      "meta": ["divided"],
+      "measures": {
+        "us": {
+          "amount": 0.5,
+          "unitShort": "cups",
+          "unitLong": "cups"
+        },
+        "metric": {
+          "amount": 108,
+          "unitShort": "ml",
+          "unitLong": "milliliters"
+        }
+      }
+    },
+    {
+      "id": 1033,
+      "aisle": "Cheese",
+      "image": "parmesan.jpg",
+      "consistency": "SOLID",
+      "name": "parmesan",
+      "nameClean": "parmesan",
+      "original": "1/2 cup finely grated Parmesan, divided",
+      "originalName": "finely grated Parmesan, divided",
+      "amount": 0.5,
+      "unit": "cup",
+      "meta": ["divided", "finely grated"],
+      "measures": {
+        "us": {
+          "amount": 0.5,
+          "unitShort": "cups",
+          "unitLong": "cups"
+        },
+        "metric": {
+          "amount": 50,
+          "unitShort": "g",
+          "unitLong": "grams"
+        }
+      }
+    },
+    {
+      "id": 1033,
+      "aisle": "Cheese",
+      "image": "parmesan.jpg",
+      "consistency": "SOLID",
+      "name": "parmesan",
+      "nameClean": "parmesan",
+      "original": "1/2 cup shaved parmesan",
+      "originalName": "shaved parmesan",
+      "amount": 0.5,
+      "unit": "cup",
+      "meta": ["shaved"],
+      "measures": {
+        "us": {
+          "amount": 0.5,
+          "unitShort": "cups",
+          "unitLong": "cups"
+        },
+        "metric": {
+          "amount": 50,
+          "unitShort": "g",
+          "unitLong": "grams"
+        }
+      }
+    },
+    {
+      "id": 10111251,
+      "aisle": "Produce",
+      "image": "img.spoonacular.",
+      "consistency": "SOLID",
+      "name": "romaine",
+      "nameClean": "romaine",
+      "original": "3 heads romaine",
+      "originalName": "romaine",
+      "amount": 3,
+      "unit": "heads",
+      "meta": [],
+      "measures": {
+        "us": {
+          "amount": 3,
+          "unitShort": "heads",
+          "unitLong": "heads"
+        },
+        "metric": {
+          "amount": 3,
+          "unitShort": "heads",
+          "unitLong": "heads"
+        }
+      }
+    },
+    {
+      "id": 6971,
+      "aisle": "Condiments",
+      "image": "dark-sauce.jpg",
+      "consistency": "LIQUID",
+      "name": "worcestershire sauce",
+      "nameClean": "worcestershire sauce",
+      "original": "1 1/2 teaspoons Worcestershire sauce",
+      "originalName": "Worcestershire sauce",
+      "amount": 1.5,
+      "unit": "teaspoons",
+      "meta": [],
+      "measures": {
+        "us": {
+          "amount": 1.5,
+          "unitShort": "tsps",
+          "unitLong": "teaspoons"
+        },
+        "metric": {
+          "amount": 1.5,
+          "unitShort": "tsps",
+          "unitLong": "teaspoons"
+        }
+      }
+    },
+    {
+      "id": 6971,
+      "aisle": "Condiments",
+      "image": "dark-sauce.jpg",
+      "consistency": "LIQUID",
+      "name": "worcestershire sauce",
+      "nameClean": "worcestershire sauce",
+      "original": "1 1/2 tsp worcestershire sauce",
+      "originalName": "worcestershire sauce",
+      "amount": 1.5,
+      "unit": "tsp",
+      "meta": [],
+      "measures": {
+        "us": {
+          "amount": 1.5,
+          "unitShort": "tsps",
+          "unitLong": "teaspoons"
+        },
+        "metric": {
+          "amount": 1.5,
+          "unitShort": "tsps",
+          "unitLong": "teaspoons"
+        }
+      }
+    }
+  ],
+  "id": 200,
+  "title": "Chicken Caesar Salad With Anchovy-caesar Vinaigrette And Garlic",
+  "readyInMinutes": 45,
+  "servings": 4,
+  "sourceUrl": "http://www.food52.com/recipes/4510_chicken_caesar_salad_with_anchovycaesar_vinaigrette_and_garlicparmesan_croutons",
+  "image": "https://img.spoonacular.com/recipes/200-556x370.jpg",
+  "imageType": "jpg",
+  "summary": "The recipe Chicken Caesar Salad With Anchovy-caesar Vinaigrette And Garlic can be made \u003Cb\u003Ein roughly 45 minutes\u003C/b\u003E. This recipe serves 4 and costs $3.94 per serving. One portion of this dish contains approximately \u003Cb\u003E45g of protein\u003C/b\u003E, \u003Cb\u003E18g of fat\u003C/b\u003E, and a total of \u003Cb\u003E476 calories\u003C/b\u003E. It works well as a main course. It is brought to you by Food52. Head to the store and pick up worcestershire sauce, granulated sugar, chicken breasts, and a few other things to make it today. Only a few people really liked this American dish. 3 people found this recipe to be tasty and satisfying. Overall, this recipe earns a \u003Cb\u003Egreat spoonacular score of 92%\u003C/b\u003E. \u003Ca href=\"https://spoonacular.com/recipes/chicken-pasta-with-anchovy-rosemary-sauce-638245\"\u003EChicken Pasta With Anchovy Rosemary Sauce\u003C/a\u003E, \u003Ca href=\"https://spoonacular.com/recipes/lemon-and-arnkha-msc-risotto-with-anchovy-fried-crumbs-649496\"\u003ELemon and Arënkha Msc Risotto With Anchovy-Fried Crumbs\u003C/a\u003E, and \u003Ca href=\"https://spoonacular.com/recipes/skye-gyngells-anchovy-and-walnut-sauce-660237\"\u003ESkye Gyngell's Anchovy and Walnut Sauce\u003C/a\u003E are very similar to this recipe.",
+  "cuisines": ["American"],
+  "dishTypes": [
+    "side dish",
+    "lunch",
+    "main course",
+    "salad",
+    "main dish",
+    "dinner"
+  ],
+  "diets": [],
+  "occasions": [],
+  "instructions": "Preheat the oven to 425 F.                                  Blend anchovies, 2 cloves of the minced garlic, lemon juice, mustard, sugar, 6 tablespoons of the finely grated Parmesan, and the Worcestershire sauce until smooth.                                  With the blender running, stream in 1/2 cup olive oil until the dressing is thick and fully emulsified.                                  Brush chicken breasts with a few tablespoons of the dressing and grill or broil until cooked through. Cool and slice or chop.                                  Wash and dry lettuce, then cut it however you like (I prefer chopping it into 1-inch pieces).                                  Open baguette by cutting it in half, cut each half into 1-inch croutons, and toss it with 2 tablespoons olive oil and 1 clove minced garlic. Bake in the preheated oven until crunchy, about 10 minutes (be careful to make sure the garlic doesn't burn!). Sprinkle the remaining 2 tablespoons of finely grated Parmesan on top of the croutons, then put back in oven until the cheese is melted.                                  Assemble the salad by dressing the romaine to taste, mixing in the croutons and the grilled chicken, and topping with shaved Parmesan. Enjoy!",
+  "analyzedInstructions": [
+    {
+      "name": "",
+      "steps": [
+        {
+          "number": 1,
+          "step": "Preheat the oven to 425 F.",
+          "ingredients": [],
+          "equipment": [
+            {
+              "id": 404784,
+              "name": "oven",
+              "localizedName": "oven",
+              "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg",
+              "temperature": {
+                "number": 425,
+                "unit": "Fahrenheit"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "step": "Blend anchovies, 2 cloves of the minced garlic, lemon juice, mustard, sugar, 6 tablespoons of the finely grated Parmesan, and the Worcestershire sauce until smooth.",
+          "ingredients": [
+            {
+              "id": 6971,
+              "name": "worcestershire sauce",
+              "localizedName": "worcestershire sauce",
+              "image": "dark-sauce.jpg"
+            },
+            {
+              "id": 0,
+              "name": "minced garlic",
+              "localizedName": "minced garlic",
+              "image": "garlic.png"
+            },
+            {
+              "id": 9152,
+              "name": "lemon juice",
+              "localizedName": "lemon juice",
+              "image": "lemon-juice.jpg"
+            },
+            {
+              "id": 15001,
+              "name": "anchovies",
+              "localizedName": "anchovies",
+              "image": "anchovies.jpg"
+            },
+            {
+              "id": 1033,
+              "name": "parmesan",
+              "localizedName": "parmesan",
+              "image": "parmesan.jpg"
+            },
+            {
+              "id": 2046,
+              "name": "mustard",
+              "localizedName": "mustard",
+              "image": "regular-mustard.jpg"
+            },
+            {
+              "id": 1002011,
+              "name": "clove",
+              "localizedName": "clove",
+              "image": "cloves.jpg"
+            },
+            {
+              "id": 19335,
+              "name": "sugar",
+              "localizedName": "sugar",
+              "image": "sugar-in-bowl.png"
+            }
+          ],
+          "equipment": []
+        },
+        {
+          "number": 3,
+          "step": "With the blender running, stream in 1/2 cup olive oil until the dressing is thick and fully emulsified.",
+          "ingredients": [
+            {
+              "id": 4053,
+              "name": "olive oil",
+              "localizedName": "olive oil",
+              "image": "olive-oil.jpg"
+            }
+          ],
+          "equipment": [
+            {
+              "id": 404726,
+              "name": "blender",
+              "localizedName": "blender",
+              "image": "https://spoonacular.com/cdn/equipment_100x100/blender.png"
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "step": "Brush chicken breasts with a few tablespoons of the dressing and grill or broil until cooked through. Cool and slice or chop.",
+          "ingredients": [
+            {
+              "id": 5062,
+              "name": "chicken breast",
+              "localizedName": "chicken breast",
+              "image": "chicken-breasts.png"
+            }
+          ],
+          "equipment": [
+            {
+              "id": 404706,
+              "name": "grill",
+              "localizedName": "grill",
+              "image": "https://spoonacular.com/cdn/equipment_100x100/grill.jpg"
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "step": "Wash and dry lettuce, then cut it however you like (I prefer chopping it into 1-inch pieces).",
+          "ingredients": [
+            {
+              "id": 11252,
+              "name": "lettuce",
+              "localizedName": "lettuce",
+              "image": "iceberg-lettuce.jpg"
+            }
+          ],
+          "equipment": []
+        },
+        {
+          "number": 6,
+          "step": "Open baguette by cutting it in half, cut each half into 1-inch croutons, and toss it with 2 tablespoons olive oil and 1 clove minced garlic.",
+          "ingredients": [
+            {
+              "id": 0,
+              "name": "minced garlic",
+              "localizedName": "minced garlic",
+              "image": "garlic.png"
+            },
+            {
+              "id": 4053,
+              "name": "olive oil",
+              "localizedName": "olive oil",
+              "image": "olive-oil.jpg"
+            },
+            {
+              "id": 18033,
+              "name": "baguette",
+              "localizedName": "baguette",
+              "image": "half-baguette.jpg"
+            },
+            {
+              "id": 18242,
+              "name": "croutons",
+              "localizedName": "croutons",
+              "image": "croutons.png"
+            },
+            {
+              "id": 1002011,
+              "name": "clove",
+              "localizedName": "clove",
+              "image": "cloves.jpg"
+            }
+          ],
+          "equipment": []
+        },
+        {
+          "number": 7,
+          "step": "Bake in the preheated oven until crunchy, about 10 minutes (be careful to make sure the garlic doesn't burn!).",
+          "ingredients": [
+            {
+              "id": 11215,
+              "name": "garlic",
+              "localizedName": "garlic",
+              "image": "garlic.png"
+            }
+          ],
+          "equipment": [
+            {
+              "id": 404784,
+              "name": "oven",
+              "localizedName": "oven",
+              "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg"
+            }
+          ],
+          "length": {
+            "number": 10,
+            "unit": "minutes"
+          }
+        },
+        {
+          "number": 8,
+          "step": "Sprinkle the remaining 2 tablespoons of finely grated Parmesan on top of the croutons, then put back in oven until the cheese is melted.",
+          "ingredients": [
+            {
+              "id": 18242,
+              "name": "croutons",
+              "localizedName": "croutons",
+              "image": "croutons.png"
+            },
+            {
+              "id": 1033,
+              "name": "parmesan",
+              "localizedName": "parmesan",
+              "image": "parmesan.jpg"
+            },
+            {
+              "id": 1041009,
+              "name": "cheese",
+              "localizedName": "cheese",
+              "image": "https://spoonacular.com/cdn/ingredients_100x100/cheddar-cheese.png"
+            }
+          ],
+          "equipment": [
+            {
+              "id": 404784,
+              "name": "oven",
+              "localizedName": "oven",
+              "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg"
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "step": "Assemble the salad by dressing the romaine to taste, mixing in the croutons and the grilled chicken, and topping with shaved Parmesan. Enjoy!",
+          "ingredients": [
+            {
+              "id": 1015114,
+              "name": "grilled chicken",
+              "localizedName": "grilled chicken",
+              "image": "rotisserie-chicken.png"
+            },
+            {
+              "id": 18242,
+              "name": "croutons",
+              "localizedName": "croutons",
+              "image": "croutons.png"
+            },
+            {
+              "id": 1033,
+              "name": "parmesan",
+              "localizedName": "parmesan",
+              "image": "parmesan.jpg"
+            },
+            {
+              "id": 10111251,
+              "name": "romaine",
+              "localizedName": "romaine",
+              "image": "romaine"
+            }
+          ],
+          "equipment": []
+        }
+      ]
+    }
+  ],
+  "originalId": null,
+  "spoonacularScore": 91.8079223632813
+}
