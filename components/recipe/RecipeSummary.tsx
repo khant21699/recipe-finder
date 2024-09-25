@@ -2,6 +2,7 @@ import { View, Text } from "react-native";
 import React from "react";
 import { formatRecipeInfo } from "@/util/format_string";
 import FormattedText from "../FormattedText";
+import { Link } from "expo-router";
 
 type Props = {
   summary: string;
@@ -39,7 +40,9 @@ const RecipeSummary = ({ summary, type }: Props) => {
               alignSelf: "flex-start", // This is key for the 'fit-content' effect
             }}
           >
-            <Text style={{ color: "#fff" }}>{t}</Text>
+            <Link href={`category/type=${t}` as any}>
+              <Text style={{ color: "#fff" }}>{t}</Text>
+            </Link>
           </View>
         ))}
       </View>

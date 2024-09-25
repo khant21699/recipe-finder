@@ -31,6 +31,11 @@ export default function RootLayout() {
       <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="recipe/[id]" options={{ headerShown: false }} />
+        <Stack.Screen
+          name="category/[category]"
+          options={{ headerShown: false }}
+        />
+
         <Stack.Screen name="+not-found" />
       </Stack>
     </View>
