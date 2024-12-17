@@ -47,4 +47,19 @@ export async function getRecipeInfo(id: number) {
   }
 }
 
-export default { searchRecipes, getRecipeInfo };
+export async function getSimilarRecipes(id: number): Promise<Recipe[]> {
+  const baseUrl = `https://api.spoonacular.com/recipes/${id}/similar?apiKey=${API_KEY}`;
+  try {
+    const response = await fetch(baseUrl);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data: Recipe[] = await response.json();
+    return data;
+  } catch (error) {
+    console.error("Error searching recipes:", error);
+    throw error;
+  }
+}
+
+export default { searchRecipes, getRecipeInfo, getSimilarRecipes };

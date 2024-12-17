@@ -2,19 +2,20 @@
 import React, { useEffect, useState } from "react";
 import { View, ScrollView } from "react-native";
 import { useLocalSearchParams } from "expo-router";
-import { getRecipeInfo } from "@/composable/use-api";
+import { getRecipeInfo, getSimilarRecipes } from "@/composable/use-api";
 import BackButton from "@/components/BackBtn";
 import Loading from "@/components/Loading";
 import RecipeHeader from "@/components/recipe/RecipeHeader";
 import IngredientsList from "@/components/recipe/IngredientsList";
 import RecipeSummary from "@/components/recipe/RecipeSummary";
 import Instruction from "@/components/recipe/Instruction";
+import SimilarRecipes from "@/components/recipe/SimilarRecipes";
 
 const RecipeView = () => {
   const { id } = useLocalSearchParams();
   const [recipe, setRecipe] = useState<RecipeDetail | undefined>();
   const [loading, setLoading] = useState(false);
-
+  const [similar, setSimilar] = useState<Recipe[] | undefined>();
   const getData = async () => {
     setLoading(true);
     try {
@@ -27,8 +28,19 @@ const RecipeView = () => {
     }
   };
 
+  const getSimilarData = async () => {
+    try {
+      const data = await getSimilarRecipes(parseInt(id as string));
+      setSimilar(data);
+    } catch (err) {
+      console.log(err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   useEffect(() => {
-    getData();
+    Promise.all([getData(), getSimilarData()]);
   }, [id]);
 
   if (loading) return <Loading showBackBtn />;
@@ -50,6 +62,7 @@ const RecipeView = () => {
               <Instruction number={index + 1} key={index} instruction={i} />
             );
           })}
+          {similar && <SimilarRecipes similar={similar} />}
         </ScrollView>
       </View>
     );
