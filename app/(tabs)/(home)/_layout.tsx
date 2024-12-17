@@ -4,6 +4,7 @@ import { SafeAreaView } from "react-native";
 import { searchRecipes } from "@/composable/use-api";
 import RecipeList from "@/components/home/RecipeList";
 import SearchBar from "@/components/SearchBar";
+import FilterModal from "@/components/home/FilterModal";
 
 const PAGE_SIZE = 10;
 
@@ -14,7 +15,7 @@ const Home = () => {
   const [page, setPage] = useState(1);
   const [hasMore, setHasMore] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");
-
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
   const fetchRecipes = useCallback(
     async (pageNumber: number, search: string = "") => {
       try {
@@ -49,8 +50,9 @@ const Home = () => {
   }, [searchTerm, fetchRecipes]);
 
   const handleSearch = (term: string) => {
-    setSearchTerm(term);
-    setPage(1);
+    setPage(0);
+    fetchRecipes(page, term);
+    setPage((prevPage) => prevPage + 1);
   };
 
   const handleScroll = (event: any) => {
@@ -66,7 +68,11 @@ const Home = () => {
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: "white" }}>
-      <SearchBar onSearch={handleSearch} />
+      <SearchBar
+        onSearch={handleSearch}
+        openFilter={() => setIsFilterOpen(!isFilterOpen)}
+      />
+      {isFilterOpen && <FilterModal />}
       <RecipeList
         recipes={recipes}
         loading={loading}

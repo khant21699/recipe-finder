@@ -1,8 +1,15 @@
 import { View, TextInput, TouchableOpacity } from "react-native";
 import React, { useState } from "react";
 import AntDesign from "@expo/vector-icons/AntDesign";
+import Feather from "@expo/vector-icons/Feather";
 
-const SearchBar = ({ onSearch }: { onSearch: (term: string) => void }) => {
+const SearchBar = ({
+  onSearch,
+  openFilter,
+}: {
+  onSearch: (term: string) => void;
+  openFilter: () => void;
+}) => {
   const [searchTerm, setSearchTerm] = useState("");
 
   const handleSubmit = () => {
@@ -20,6 +27,7 @@ const SearchBar = ({ onSearch }: { onSearch: (term: string) => void }) => {
         padding: 20,
         flexDirection: "row",
         alignItems: "center",
+        gap: 10,
       }}
     >
       <View
@@ -29,8 +37,8 @@ const SearchBar = ({ onSearch }: { onSearch: (term: string) => void }) => {
           alignItems: "center",
           borderWidth: 1,
           borderColor: "black",
-
           borderRadius: 10,
+          height: "100%",
         }}
       >
         <View
@@ -82,6 +90,17 @@ const SearchBar = ({ onSearch }: { onSearch: (term: string) => void }) => {
           </TouchableOpacity>
         )}
       </View>
+      <TouchableOpacity
+        style={{
+          padding: 20,
+          borderWidth: 1,
+          borderColor: "black",
+          borderRadius: 10,
+        }}
+        onPress={openFilter}
+      >
+        <Feather name="filter" size={24} color="black" />
+      </TouchableOpacity>
     </View>
   );
 };
