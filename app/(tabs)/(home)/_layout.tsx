@@ -16,6 +16,7 @@ const Home = () => {
   const [hasMore, setHasMore] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");
   const [isFilterOpen, setIsFilterOpen] = useState(false);
+  const [selectedMealType, setSelectedMealType] = useState<string | null>(null);
   const fetchRecipes = useCallback(
     async (pageNumber: number, search: string = "") => {
       try {
@@ -49,6 +50,12 @@ const Home = () => {
     fetchRecipes(1, searchTerm);
   }, [searchTerm, fetchRecipes]);
 
+  useEffect(() => {
+    if (selectedMealType) {
+      fetchRecipes(1, selectedMealType);
+    }
+  }, [selectedMealType]);
+
   const handleSearch = (term: string) => {
     setPage(0);
     fetchRecipes(page, term);
@@ -72,7 +79,9 @@ const Home = () => {
         onSearch={handleSearch}
         openFilter={() => setIsFilterOpen(!isFilterOpen)}
       />
-      {isFilterOpen && <FilterModal />}
+      {isFilterOpen && (
+        <FilterModal setSelectedMealType={setSelectedMealType} />
+      )}
       <RecipeList
         recipes={recipes}
         loading={loading}
