@@ -2,7 +2,7 @@ const API_KEY = process.env.EXPO_PUBLIC_SPOONACULAR_API_KEY;
 
 // Function to search recipes with pagination support
 export async function searchRecipes(
-  params: SearchParams & { page?: number; limit?: number } = {}
+  params: SearchParams & { offset?: number; limit?: number } = {}
 ): Promise<SearchResponse> {
   const baseUrl = "https://api.spoonacular.com/recipes/complexSearch";
 

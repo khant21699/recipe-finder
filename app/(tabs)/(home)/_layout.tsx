@@ -20,24 +20,25 @@ const Home = () => {
   const fetchRecipes = useCallback(
     async (pageNumber: number, search: string = "") => {
       try {
-        if (pageNumber === 1) {
+        console.log("fetchRecipes", pageNumber, search);
+        if (pageNumber === 0) {
           setLoading(true);
         } else {
           setLoadingMore(true);
         }
         const response = await searchRecipes({
-          page: pageNumber,
+          offset: pageNumber,
           limit: PAGE_SIZE,
           query: search,
         });
-        if (pageNumber === 1) {
+        if (pageNumber === 0) {
           setRecipes(response.results);
         } else {
           setRecipes((prevRecipes) => [...prevRecipes, ...response.results]);
         }
         setHasMore(response.results.length >= PAGE_SIZE);
       } catch (error) {
-        console.error("Failed to fetch recipes:fdfdfdfdfdfdfdfd", error);
+        console.error("Failed to fetch recipes:", error);
       } finally {
         setLoading(false);
         setLoadingMore(false);
@@ -47,19 +48,21 @@ const Home = () => {
   );
 
   useEffect(() => {
-    fetchRecipes(1, searchTerm);
+    fetchRecipes(0, searchTerm);
+    setPage(0);
   }, [searchTerm, fetchRecipes]);
 
   useEffect(() => {
     if (selectedMealType) {
-      fetchRecipes(1, selectedMealType);
+      fetchRecipes(0, selectedMealType);
     }
   }, [selectedMealType]);
 
   const handleSearch = (term: string) => {
+    setSearchTerm(term);
     setPage(0);
     fetchRecipes(page, term);
-    setPage((prevPage) => prevPage + 1);
+    setPage((prevPage) => prevPage + 10);
   };
 
   const handleScroll = (event: any) => {
@@ -68,8 +71,8 @@ const Home = () => {
       layoutMeasurement.height + contentOffset.y >= contentSize.height - 50;
 
     if (isCloseToBottom && !loading && !loadingMore && hasMore) {
-      setPage((prevPage) => prevPage + 1);
-      fetchRecipes(page + 1, searchTerm);
+      setPage((prevPage) => prevPage + 10);
+      fetchRecipes(page + 10, searchTerm);
     }
   };
 
@@ -80,7 +83,10 @@ const Home = () => {
         openFilter={() => setIsFilterOpen(!isFilterOpen)}
       />
       {isFilterOpen && (
-        <FilterModal setSelectedMealType={setSelectedMealType} />
+        <FilterModal
+          setSelectedMealType={setSelectedMealType}
+          selectedMealType={selectedMealType}
+        />
       )}
       <RecipeList
         recipes={recipes}
