@@ -20,7 +20,6 @@ const Home = () => {
   const fetchRecipes = useCallback(
     async (pageNumber: number, search: string = "") => {
       try {
-        console.log("fetchRecipes", pageNumber, search);
         if (pageNumber === 0) {
           setLoading(true);
         } else {

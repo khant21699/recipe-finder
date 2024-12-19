@@ -22,7 +22,7 @@ const RecipeView = () => {
       const data = await getRecipeInfo(parseInt(id as string));
       setRecipe(data);
     } catch (err) {
-      console.log(err);
+      throw err;
     } finally {
       setLoading(false);
     }
@@ -33,7 +33,7 @@ const RecipeView = () => {
       const data = await getSimilarRecipes(parseInt(id as string));
       setSimilar(data);
     } catch (err) {
-      console.log(err);
+      throw err;
     } finally {
       setLoading(false);
     }

@@ -10,7 +10,6 @@ type Props = {
 };
 
 const RecipeSummary = ({ summary, type }: Props) => {
-  console.log(formatRecipeInfo(summary));
   return (
     <View style={{ paddingHorizontal: 10, marginTop: 20 }}>
       <Text style={{ fontSize: 20, fontWeight: "semibold" }}>Summary</Text>
